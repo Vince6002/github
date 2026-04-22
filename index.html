@@ -1,21 +1,97 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Golf Simulator</title>
-
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>GitHub Alapok</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(120deg, #1e3c72, #2a5298);
+            color: white;
+        }
+        header {
+            text-align: center;
+            padding: 40px;
+            background: rgba(0,0,0,0.3);
+        }
+        h1 {
+            font-size: 3em;
+        }
+        .container {
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        code {
+            background: black;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0,0,0,0.3);
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
 
-<h1>⛳ Golf Simulator</h1>
-<p>Kattints a labdára, húzd vissza, majd engedd el!</p>
+<header>
+    <h1>🚀 GitHub Alapok</h1>
+    <p>Parancsok és előnyök egyszerűen</p>
+</header>
 
-<canvas id="game" width="600" height="300"></canvas>
-<br>
-<button onclick="resetGame()">Újra</button>
+<div class="container">
 
-<script src="script.js"></script>
+    <div class="card">
+        <h2>📌 Alap parancsok</h2>
+        <p><strong>Repo klónozása:</strong></p>
+        <code>git clone URL</code>
+
+        <p><strong>Változtatások hozzáadása:</strong></p>
+        <code>git add .</code>
+
+        <p><strong>Commit készítése:</strong></p>
+        <code>git commit -m "Üzenet"</code>
+
+        <p><strong>Feltöltés GitHubra:</strong></p>
+        <code>git push</code>
+    </div>
+
+    <div class="card">
+        <h2>🌟 Előnyök</h2>
+        <ul>
+            <li>Verziókezelés (vissza tudsz lépni korábbi állapotokra)</li>
+            <li>Könnyű csapatmunka</li>
+            <li>Biztonságos felhő alapú tárolás</li>
+            <li>Portfólió építés fejlesztőknek</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>💡 Tipp</h2>
+        <p>Használd a <strong>branch</strong>-eket külön fejlesztésekhez:</p>
+        <code>git checkout -b uj-funkcio</code>
+    </div>
+
+</div>
+
+<footer>
+    <p>Készítette: Te 😎 | 2026</p>
+</footer>
+
 </body>
 </html>
