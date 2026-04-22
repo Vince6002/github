@@ -1,20 +1,53 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Golf Simulator</title>
-
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenisz Világa</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>⛳ Golf Simulator</h1>
-<p>Kattints a labdára, húzd vissza, majd engedd el!</p>
+<header>
+    <h1>🎾 A Tenisz Világa</h1>
+    <p>Ismerd meg a sportot!</p>
+</header>
 
-<canvas id="game" width="600" height="300"></canvas>
-<br>
-<button onclick="resetGame()">Újra</button>
+<nav>
+    <a href="#about">Mi az a tenisz?</a>
+    <a href="#rules">Szabályok</a>
+    <a href="#players">Híres játékosok</a>
+</nav>
+
+<section id="about">
+    <h2>Mi az a tenisz?</h2>
+    <p>A tenisz egy népszerű labdajáték, amelyet két játékos (egyéni) vagy két csapat (páros) játszik.</p>
+</section>
+
+<section id="rules">
+    <h2>Alap szabályok</h2>
+    <ul>
+        <li>A játék célja, hogy az ellenfél térfelére juttasd a labdát.</li>
+        <li>Pontot szerzel, ha az ellenfél nem tudja visszaütni.</li>
+        <li>Játszmákból és szettekből áll a mérkőzés.</li>
+    </ul>
+</section>
+
+<section id="players">
+    <h2>Híres játékosok</h2>
+    <ul>
+        <li>Roger Federer</li>
+        <li>Rafael Nadal</li>
+        <li>Novak Djokovic</li>
+        <li>Serena Williams</li>
+    </ul>
+</section>
+
+<button onclick="showMessage()">Kattints ide!</button>
+
+<footer>
+    <p>© 2026 Tenisz Weboldal</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
